@@ -1,0 +1,472 @@
+/* Box Model Hack */
+* {
+   box-sizing: border-box;
+   list-style: none;
+	text-decoration: none;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html, body {
+	height: 100%;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+html	{
+	font-size: 62.5%;
+}
+
+
+p { font-size: 1.8rem;
+	line-height: 150%; 
+}
+
+span {
+	font-size: 2rem;
+	line-height: 150%;
+}
+
+nav ul {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	font-size: 1.8rem;
+	padding-top: 1%;
+	margin-bottom: 1%;
+	
+	
+}
+
+ul li {
+	padding: 0 2%;
+}
+
+nav a {
+	color: black;
+}
+
+nav img {
+	 width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+.logo {
+	margin-right: 8%;
+	
+
+}
+
+.logo a {
+	font-size: 2.0rem;
+	font-weight: 700;
+	font-family: 'Dancing Script', cursive
+}
+
+nav aside {
+	display: none;
+}
+
+
+
+
+
+/*Toppage*/
+
+.top-container {
+	/*https://i.ibb.co/bmngXzf/salon-main-img.jpg*/
+
+	background-image: url("https://i.imgur.com/J6dT9ds.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	/*clear: both;*/
+	border-bottom: 3px ridge rgb(193 185 189);
+	
+	}
+
+.heading {
+	height: 60%;
+	width: 70%;
+	color: white;
+	padding: 5% 0 5% 5%;
+
+}
+
+h1	{
+	font-weight: 300;
+	line-height: 120%;
+	font-size: 6rem;
+	padding: 2vh 2vh 1vh 1vh;
+
+}
+
+.heading span	{
+	display: block;
+	
+}
+
+.heading .black-btn, .heading span {
+	margin: 2vh 2vh 4vh 1vh;
+}
+
+
+.offer {
+	height: 15%;
+	background: black;
+	width: 25%;
+	color: white;
+	margin: 7vh 2vh 1vh 1vh;
+	padding: 3% 4%;
+}	
+
+.offer strong {
+	font-size: 4rem;
+	font-weight: bold;
+}
+
+
+
+/*verticle clock*/
+
+.top-container h5 {
+	color: white;
+	transform: rotate(90deg);
+	right: -8rem;
+	top: 35vh;
+	position: absolute;
+	letter-spacing: 0.2rem;
+	font-size: 2rem;
+	 }
+
+
+.services-container {
+	padding: 5% 3%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.services-container section {
+	text-align: center;
+	width: 33.33%;
+	padding: 0 8%;
+}
+
+.bottom-front {
+	display: flex;
+	justify-content: center;
+	overflow: auto;
+	background: rgb(241 242 245);	
+}
+
+/*momentum*/
+
+.momentum {
+	
+	width: 40%;
+	padding: 5% 3% 5% 8%;
+}
+
+.momentum h2 {
+	font-size: 3.5rem;
+	padding: 0 5% 5% 0;
+}
+
+.momentum p {
+	padding: 0 5% 5% 0;
+
+}
+
+
+.video { 
+	width: 30%;
+	margin: 5% 5%;
+	border: 1px solid black;
+	background-image: url("https://i.imgur.com/nCaHl7u.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+
+	
+
+ }
+
+ .stylists {
+ 	display: flex;
+ 	justify-content: space-between; 	
+ 	width: 70%;						
+ 	margin: 5% auto;
+ 	
+ 	
+
+ }
+
+ .stylists section {
+ 	height: 100%;
+ 	width: 25%;
+ 	position: relative;
+ 	padding: 2%;
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: center;
+ 	align-items: center;		
+ }
+
+ .scissors {
+ 	width: 100%;
+
+ }
+
+.stylist-box {
+	background: black;
+	width: 100%;
+	text-align: center;
+	padding: 2rem 2rem;
+
+}
+
+ .stylists span {
+ 	font-weight: lighter;
+ 	color: white;
+ 	text-align: center;
+ }
+
+.stylists strong {
+	font-size: 1.8rem;
+	line-height: 200%;
+}
+
+
+
+.colourday {
+	background-image: url("https://i.ibb.co/rZx6GgY/whitehair.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 70%;
+	margin: 0 auto;
+	padding: 6% 40% 10% 5%;
+	line-height: 150%;
+	margin-bottom: 5%;
+}
+
+.colourday span {
+	font-size: 2rem;
+
+}
+
+.colourday strong {
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.colourday p {
+	margin-bottom: 5%;
+}
+
+.lookbook h3 {
+	text-align: center;
+	font-size: 3rem;
+	font-weight: bold;
+	margin-bottom: 3%;
+}
+
+.lookbook hr {
+	margin: 0 48% 5% 48%;
+
+}
+
+.lead-container {
+	display: flex;
+	justify-content: center;
+	
+	height: 100%;
+
+	
+}
+
+.container {
+height: 100%;
+}
+
+.container img  {
+	height: 130%;
+	width: 130%;
+	height: auto;
+}
+
+.top-row {
+	margin-bottom: 1rem;
+}
+
+
+.col-1 {
+	float: left;
+	margin-right: 5rem;
+}
+
+.col-2 {
+	float: left;
+}
+
+.col-3 {
+	float: left;
+	margin-left: 5rem;
+}
+
+
+/*BTNS*/
+
+.black-btn {
+	text-decoration: none;
+	background: black;
+	color: white;
+	padding: 2% 3%;
+}
+
+.white-btn {
+	text-decoration: none;
+	background: white;
+	color: black;
+	padding: 2%;
+
+}
+
+
+/* MEDIA :( */
+
+@media screen and (min-width: 1800px) {
+	html {
+		font-size: 75%;
+	}
+	body {
+
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	
+
+	html {
+		font-size: 50%;
+	}
+
+	html, body {
+		width: 100%;
+	}
+
+	.media {
+		display: none;
+	}
+
+	.logo  {
+		
+		margin-left: 10%;
+	}
+
+	.logo a {
+		font-size: 3rem;
+	}
+
+	nav ul {
+		justify-content: space-between;
+	}
+
+	nav aside {
+		
+		display: block;
+		margin-right: 10%;
+		
+	}
+
+	nav div {
+		width: 3.5rem;
+  		height: 0.5rem;
+ 		 background-color: black;
+ 		 margin: 6px 0;
+	}
+	.top-container h5 {
+		display: none;
+	}
+
+	.top-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.services-container {
+		flex-direction: column;
+		align-items: center;
+
+	}
+
+	.services-container section {
+		width: 100%;
+		font-size: 3rem;
+		padding: 5% 10%;
+	}
+
+	.offer, .colourday  {
+		display: none;
+	}
+
+	.stylists {
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+
+	.bottom-front {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.momentum {
+		text-align: center;
+	}
+
+	.video {
+		height: 30vh;
+	}
+
+	.black-btn { 
+	font-size: 2rem; }
+
+
+	.container 
+
+	.container img  {
+	height: 80%;
+	width: 80%;
+	height: auto;
+}
+
+	.col-1 {
+	
+	margin-right: 0.5rem;
+}
+
+
+	.col-3 {
+		
+	margin-left: 0.5rem;
+	}
+
+
+}
